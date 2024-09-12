@@ -80,14 +80,14 @@ When you work with [nullable value types](../builtin-types/nullable-value-types.
 
 Alternatively, use the <xref:System.Nullable%601.GetValueOrDefault?displayProperty=nameWithType> method if the value to be used when a nullable type value is `null` should be the default value of the underlying value type.
 
-### Using ?? with `throw expressions
+### Using ?? with throw expressions
 You can use a [`throw` expression](../statements/exception-handling-statements.md#the-throw-expression) as the right-hand operand of the `??` operator to make argument-checking code more concise:
 
   [!code-csharp[with throw expression](snippets/shared/NullCoalescingOperator.cs#WithThrowExpression)]
 
   The preceding example also demonstrates how to use [expression-bodied members](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to define a property.
 
-### Simplifying null cChecks with ??=
+### Simplifying null checks with ??=
 You can use the `??=` operator to replace code of the form:
 
   ```csharp
